@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avtar Generator</title>
+    <link rel="stylesheet" href="/CSS/index.css">
+</head>
+<body>
+    <section>
+        <h1 id="heading1">Welcome to Avtar Generator. </h1>
+        
+        
+        <div class="body">
+            <h2 id="heading2">Write your name and genreate avtar!! &#128526</h2>
+            <div class="details">
+                <label>ENTER YOUR NAME HERE</label><br>
+                <input type="text" name="" id="nameid">
+            </div>
+
+            <div class="imagediv">
+                <img src="/CSS/dino.jpg" width="200" height="200" id="imgid">
+            </div>
+
+            <button>Generate</button>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $('button').click(function(){
+                const name = $('#nameid').val();
+                // alert(name);
+                $('#imgid').attr('src',`https://joeschmoe.io/api/v1/${name}
+`);
+                const b= $('#imgid');
+                console.log(b);
+            })
+        })
+    </script>
+</body>
+</html>
