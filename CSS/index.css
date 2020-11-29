@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(172, 243, 66);
+}
+
+section {
+    font-family: cursive;
+    margin: 15px;
+    width: 100%;
+    height: 100vh;
+}
+
+#heading1 {
+    color: rgb(11, 85, 197);
+    font-size: 2.5rem;
+    font-weight: bolder;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 10px;
+    /* margin-top: 12px; */
+}
+
+.body {
+    width: 70vw;
+    height: 65vh;
+    border: 5px solid black;
+    border-radius: 8px;
+    padding: 14px;
+    justify-content: center;
+    margin: auto;
+    margin-top: 3%;
+    background-color: rgb(233, 75, 75);
+    box-shadow: -16px 18px 7px 0px rgba(103, 64, 108, 0.6);
+}
+
+#heading2 {
+    background-color: rgb(15, 119, 79);
+    border-radius: 20px;
+    color: bisque;
+    padding: 2px;
+    text-align: center;
+}
+
+.details {
+    text-align: center;
+    margin: 8px;
+    padding: 10px;
+}
+
+.details label {
+    font-weight: 900;
+    font-size: large;
+}
+
+.details input {
+    margin-top: 5px;
+    background-color: rgb(241, 240, 142);
+    padding: 15px;
+    font-size: 16px;
+    border: 3px solid black;
+}
+
+.imagediv {
+    text-align: center;
+}
+#imgid{
+    border: 3px solid black;
+    background-color: white;
+    border-radius: 100px;
+}
+
+button {
+    background: #0773cc;
+    display: block;
+    width: 180px;
+    margin: auto;
+    margin-top: 20px;
+    padding: 4px 0;
+    border-radius: 20px;
+    color: white;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    background-color: darken(#f1c40f, 20%);
+    font-weight: bolder;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+@media(min-width: 200px) and (max-width:700px) {
+    .body {
+        width: 90vw;
+        height: 90vh;
+        border: 5px solid black;
+        border-radius: 8px;
+        padding: 14px;
+        justify-content: center;
+        margin: auto;
+        margin-top: 3%;
+        background-color: rgb(233, 75, 75);
+        box-shadow: -16px 18px 7px 0px rgba(103, 64, 108, 0.6);
+    }
+    #heading1 {
+        font-size: 1.5rem;
+    }
+    #heading2 {
+        font-size: 1.2rem;
+    }
+    .details label {
+        font-weight: 900;
+        font-size: large;
+        font-size: 0.9rem;
+    }
+    .details input {
+        margin-top: 5px;
+        background-color: rgb(241, 240, 142);
+        padding: 10px;
+        font-size: 14px;
+        border: 3px solid black;
+    }
+}
